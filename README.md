@@ -5,6 +5,7 @@ generate simple form mybatis mapper based on the datasource, also generate entit
 
 ### 生成简单样式的mybatis mapper, 顺带生成实体类,dao,daoImp等等
 * 运行Main.java中的main方法以生成代码
+* 在generateConfig.properties中配置数据源等配置信息
 * 官方的mybatisGenerator生成的mapper较为复杂, 适合在逻辑层进行类似hibernate的写法
 * 我这个生成的mapper较为简洁, 是单表的增删改查, 如下所示
 * example
@@ -53,3 +54,4 @@ DELETE FROM user WHERE userId=#{userId}
 * And it encourages a hibernate style to write the code
 * the mapper example is shown above
 * run the main method in Main.java to generate code
+* config your datasource and other config in generateConfig.proerties
